@@ -21,7 +21,7 @@ app.use("/peerjs", peerServer);
 // Set up CORS options
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000", // Replace with your client URL
+        origin: "*", // Replace with your client URL
         methods: ["GET", "POST"],
         allowedHeaders: ["my-custom-header"],
         credentials: true // Allow cookies to be sent with requests
